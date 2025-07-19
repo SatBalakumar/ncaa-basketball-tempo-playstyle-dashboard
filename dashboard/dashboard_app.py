@@ -8,7 +8,8 @@ import plotly.graph_objects as go
 # ---------------------------
 @st.cache_data
 def load_data():
-    return pd.read_csv("/Users/sathyabalakumar/MyProjects/myWinningWithStabilityDashboard/dashboard/team_AllSeasons_df_test.csv")
+    url = "https://raw.githubusercontent.com/SatBalakumar/ncaa-basketball-tempo-playstyle-dashboard/refs/heads/main/dashboard/team_AllSeasons_df_test.csv"
+    return pd.read_csv(url)
 
 df = load_data()
 
